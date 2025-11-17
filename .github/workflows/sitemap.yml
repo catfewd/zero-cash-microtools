@@ -1,0 +1,33 @@
+name: Update sitemap
+on:
+  push:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate sitemap
+        run: |
+          set -e
+          base="https://catfewd.github.io/zero-cash-microtools"
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+          for f in index.html README.html privacy.html; do
+            echo "  <url><loc>${base}/${f}</loc></url>" >> sitemap.xml
+          done
+          for f in tools/*.html; do
+            echo "  <url><loc>${base}/${f}</loc></url>" >> sitemap.xml
+          done
+          echo '</urlset>' >> sitemap.xml
+      - name: Commit sitemap
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add sitemap.xml
+          git commit -m "CI: update sitemap" || echo "No changes"
+      - name: Push
+        run: |
+          git push
