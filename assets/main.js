@@ -16,7 +16,7 @@
     ['aff-1','https://www.namecheap.com/?aff=XXXX'],
     ['aff-2','https://vercel.com?ref=yourid'],
     ['aff-3','https://plausible.io?ref=yourid'],
-    ['donate','https://www.buymeacoffee.com/yourname']
+    ['donate','https://wise.com/pay/me/pattamak22']
   ];
   for(const [id, href] of A){const el=document.getElementById(id); if(el) el.href=href}
 })();
