@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-DOMAIN/index.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/README.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/privacy.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/base64.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/json-formatter.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/jwt-decoder.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/uuid.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/password.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/timestamp.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/hash.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/csv-json.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/text-tools.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/utm-builder.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/robots.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/sitemap.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/meta-tags.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/color.html</loc></url>
+  <url><loc>https://YOUR-DOMAIN/tools/image-compress.html</loc></url>
+</urlset>
